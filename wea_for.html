@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container my-5 mx-auto">
+        <h1 class="text-muted text-center my-4">Weather App</h1>
+        <form  class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a City for Weather Information</label>
+            <input type="text" name="city" class="form-control p-4">
+
+            <label for="city">Select Country Name</label>
+            <select id="countries_list"  class="form-control p-4">
+
+            </select> <br />
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        <div class="card shadow-lg rounded d-none">
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+            <div class="icon bg-light mx-auto text-center">
+                <img src=""alt="">
+
+            </div>
+            <div class="text-muted text-uppercase text-center details">
+               <h5 class="my-3">City Name</h5>
+                <div class="my-3">Weather Condition</div>
+                <div class="display-4 my-4">
+                    <span>Temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./scripts/countries.js"></script>
+<script src="./scripts/forecast.js"></script>
+<script src="./scripts/app.js"></script>
+
+
+</body>
+</html>
